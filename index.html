@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanaa | Front-End Developer</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold: #d6b45b;
+  --dark: #101010;
+  --light: #f5f0e5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  line-height: 1.8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  padding: 22px 0;
+  border-bottom: 1px solid #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.hero {
+  padding: 95px 0;
+  text-align: center;
+}
+
+.tag {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 7vw, 55px);
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: #bbb;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #111;
+  padding: 12px 27px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 65px 0;
+}
+
+.section-title {
+  color: var(--gold);
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.about {
+  text-align: center;
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.box h3 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.box p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.skills {
+  text-align: center;
+  color: var(--gold);
+  word-spacing: 15px;
+  font-weight: bold;
+}
+
+.project-link {
+  color: var(--gold);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.contact {
+  text-align: center;
+  background: #191919;
+  border-radius: 12px;
+  padding: 40px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+  font-size: 13px;
+  border-top: 1px solid #333;
+}
+
+@media(max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0 5px;
+  }
+
+  .hero {
+    padding: 65px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Eng.Sanaa</div>
+      <div>
+        <a href="#about">من أنا</a>
+        <a href="#services">خدماتي</a>
+        <a href="#projects">أعمالي</a>
+        <a href="#contact">تواصل</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="tag">FRONT-END DEVELOPER</div>
+    <h1>
+      أحوّل أفكارك إلى<br>
+      <span>مواقع ويب مميزة</span>
+    </h1>
+    <p>
+      أساعد أصحاب المشاريع والمتاجر على بناء حضور رقمي
+      احترافي من خلال تصميم صفحات ويب عصرية ومتجاوبة.
+    </p>
+    <a href="#contact" class="btn">اطلب تصميم موقعك</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">من أنا؟</h2>
+    <p class="about">
+      أنا سناء خوجلي يوسف، مطورة واجهات أمامية مهتمة
+      بتصميم وتطوير مواقع الويب. أعمل على تحويل الأفكار
+      إلى تجارب رقمية بسيطة، أنيقة وسهلة الاستخدام،
+      مع الاهتمام بالتفاصيل وتجربة المستخدم.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">خدماتي</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Landing Pages</h3>
+        <p>تصميم صفحات هبوط احترافية للتعريف بمشروعك وجذب العملاء.</p>
+      </div>
+      <div class="box">
+        <h3>Business Websites</h3>
+        <p>مواقع تعريفية للمحلات التجارية والمشاريع الصغيرة.</p>
+      </div>
+      <div class="box">
+        <h3>Responsive Design</h3>
+        <p>تصميم مواقع تعمل بصورة مناسبة على الهواتف والشاشات المختلفة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">مهاراتي التقنية</h2>
+    <div class="skills">
+      HTML5 | CSS3 | JavaScript | GitHub
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">مشاريعي</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Sugar Bowl</h3>
+        <p>
+          مشروع ويب لعرض وصفات الحلويات والمعجنات،
+          مع تصميم واجهة بسيطة وأنيقة.
+        </p>
+        <a class="project-link"
+           href="https://sanaakhojali6-bot.github.io/Sugar-Bowl-/"
+           target="_blank">مشاهدة المشروع ←</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2 class="section-title">لديك مشروع؟</h2>
+      <p>خلينا نحول فكرتك إلى موقع ويب احترافي.</p>
+      <br>
+      <a class="btn"
+         href="https://wa.me/249996886478">
+         تواصل معي عبر واتساب
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  © 2026 Sanaa Khougli Yousif.
+  All Rights Reserved.
+</footer>
+
+</body>
+</html>
